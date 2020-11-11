@@ -1,5 +1,6 @@
 # 正确导入函数 generate_matrix, save_matrix, save_fig
-from simplelayout.generator import generate_matrix, save_matrix, save_fig, make_dir
+from simplelayout.generator import generate_matrix, save_matrix, save_fig
+from simplelayout.generator import make_dir
 from simplelayout.cli import get_options  # 保证不修改本行也可以正确导入
 
 

@@ -23,6 +23,9 @@ def generate_matrix(
     num = board_grid // unit_grid
     for i in positions:
         i = i - 1
-        layout_map[i // num * unit_grid:i // num * unit_grid + unit_grid,
-                   (i % num) * unit_grid:(i % num) * unit_grid + unit_grid] = np.ones([unit_grid, unit_grid])
+        left = i // num * unit_grid
+        bottom = (i % num) * unit_grid
+        layout_map[
+            left:left + unit_grid, bottom:bottom + unit_grid
+        ] = np.ones([unit_grid, unit_grid])
     return layout_map

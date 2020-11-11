@@ -25,7 +25,5 @@ def generate_matrix(
         i = i - 1
         left = i // num * unit_grid
         bottom = (i % num) * unit_grid
-        layout_map[
-            left:left + unit_grid, bottom:bottom + unit_grid
-        ] = np.ones([unit_grid, unit_grid])
+        layout_map[left:left + unit_grid, bottom : bottom + unit_grid] = np.ones([unit_grid, unit_grid])# noqa
     return layout_map
